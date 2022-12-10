@@ -7,8 +7,9 @@
  *if num is > 0 print positive
  *else if num is < 0 print negative
  *else print zero
- *return: 0
+ *Return: 0
  */
+
 int main(void)
 {
 	int n;
