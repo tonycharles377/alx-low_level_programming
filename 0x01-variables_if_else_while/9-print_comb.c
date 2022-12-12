@@ -1,26 +1,30 @@
-#include <stdio.h>
+#include<stdio.h>
+
 /**
- * main - print posible combination
+ * main - Entry point
  *
- * 0, 1, 2, - , 9
- * use ',' and " " for eparation
+ * Description: print 0, 1, - 9
  *
- * Return: 0
- */
+ * Return: Always 0 (Success)
+*/
+
 int main(void)
 {
-	int i;
+	int digit = 0;
 
-	for (i = 0; i <= 9; i++)
+	while (digit <= 9)
 	{
-		putchar(i + '0');
+		putchar(digit + 48);
 
-		if (i != 9)
+		if (digit != 9)
 		{
 			putchar(',');
-			putchar(" ");
+			putchar(' ');
 		}
+
+		++digit;
 	}
 	putchar('\n');
+
 	return (0);
 }
