@@ -1,4 +1,5 @@
 #include"main.h"
+#include<string.h>
 /**
  * puts2 - prints every other character of a string
  * starting with the first character
@@ -7,10 +8,11 @@
  */
 void puts2(char *str)
 {
-	int size = sizeof(str);
-	int i;
+	int len, i;
 
-	for (i = 0; i <= size; i += 2)
+	len = strlen(str);
+
+	for (i = 0; i < len; i += 2)
 	{
 		_putchar(str[i]);
 	}
