@@ -9,7 +9,7 @@
  * Letters l and L should be replaced by 1
  * Return: encoded string
  */
-char* leet(char* s)
+char *leet(char *s)
 {
 	char s1[] = "aAeEoOtTlL";
 	char s2[] = "4433007711";
