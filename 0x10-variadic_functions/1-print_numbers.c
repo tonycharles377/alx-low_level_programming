@@ -7,9 +7,9 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	unsigned int i, num;
-
 	va_list list;
+	
+	unsigned int i, num;
 
 	if (separator == NULL)
 	{
