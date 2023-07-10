@@ -5,6 +5,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include "main.h"
 
 /**
  * _strlen - returns len of string
