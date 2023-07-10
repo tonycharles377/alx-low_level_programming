@@ -33,7 +33,7 @@ size_t _strlen(char *s)
 int create_file(const char *filename, char *text_content)
 {
 	int fd;/*file descriptor*/
-	ssize_t len;
+	ssize_t len = 0;
 
 	if (filename == NULL)
 		return (-1);
