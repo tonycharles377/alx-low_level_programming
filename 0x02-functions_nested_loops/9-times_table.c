@@ -1,13 +1,12 @@
 #include <stdlib.h>
 #include "main.h"
+void times_table(void);
 /**
  * times_table - prints the 9 times table, starting with 0
  */
 void times_table(void)
 {
-	int col = 10;
-	int row = 10;
-	int i, j, result;
+	int col = 10, row = 10, i, j, result;
 
 	i = 0;
 	while (i < col)
@@ -48,5 +47,4 @@ void times_table(void)
 		_putchar('\n');
 		i++;
 	}
-	return;
 }
