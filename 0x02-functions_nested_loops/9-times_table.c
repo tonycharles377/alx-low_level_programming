@@ -15,32 +15,21 @@ void times_table(void)
 		while (j < row)
 		{
 			result = i * j;
-			if (result < 10)
+			if (j == row - 10)
+				_putchar('0' + result);
+			else if (result < 10)
 			{
-				if (j == row - 1)
-					_putchar('0' + result);
-				else
-				{
-					_putchar('0' + result);
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
-				}
+					_putchar('0' + result);
 			}
 			else
 			{
-				if (j == row - 1)
-				{
-					_putchar(result / 10 + '0');
-					_putchar(result % 10 + '0');
-				}
-				else
-				{
-					_putchar(result / 10 + '0');
-					_putchar(result % 10 + '0');
 					_putchar(',');
 					_putchar(' ');
-				}
+					_putchar(result / 10 + '0');
+					_putchar(result % 10 + '0');
 			}
 			j++;
 		}
