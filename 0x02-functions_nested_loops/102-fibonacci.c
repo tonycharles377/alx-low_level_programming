@@ -7,15 +7,15 @@
  */
 int main(void)
 {
-	int a = 1, b = 2, i, tmp;
+	long int a = 1, b = 2, i, tmp;
 
-	i = 3;
-	while (i <= 50)
+	i = 1;
+	while (i <= 25)
 	{
-		if (i == 50)
-			printf("%d, %d\n", a, b);
+		if (i == 25)
+			printf("%ld, %ld\n", a, b);
 		else
-			printf("%d, %d, ", a, b);
+			printf("%ld, %ld, ", a, b);
 		tmp = a;
 		a = tmp + b;
 		b = a + b;
