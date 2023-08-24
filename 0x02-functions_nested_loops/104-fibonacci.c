@@ -7,18 +7,20 @@
  */
 int main(void)
 {
-	long int a = 1, b = 2, i, tmp;
+	unsigned long int a = 1, b = 2, i, tmp;
 
-	i = 0;
-	while (i <= 48)
+	printf("%lu, %lu ,", a, b);
+	i = 2;
+	while (i < 99)
 	{
-		if (i == 48)
-			printf("%ld, %ld\n", a, b);
-		else
-			printf("%ld, %ld, ", a, b);
 		tmp = a;
-		a = tmp + b;
-		b = a + b;
+		a = b;
+		b = tmp + b;
+
+		if (i == 98)
+			printf("%lu\n", b);
+		else
+			printf("%lu, ", b);
 		i++;
 	}
 	return (0);
