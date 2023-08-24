@@ -11,13 +11,13 @@ int main(void)
 
 	printf("%lu, %lu ,", a, b);
 	i = 2;
-	while (i < 99)
+	while (i < 98)
 	{
 		tmp = a;
 		a = b;
 		b = tmp + b;
 
-		if (i == 98)
+		if (i == 97)
 			printf("%lu\n", b);
 		else
 			printf("%lu, ", b);
